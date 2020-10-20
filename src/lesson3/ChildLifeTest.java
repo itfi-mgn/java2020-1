@@ -23,6 +23,7 @@ public class ChildLifeTest extends LigeCycleTest {
 	
 	@Override
 	public void itemPrint(/*this*/) {
+		super.itemPrint(); // invokespecial  noVMT, this
 		System.err.println("Child life cycle item z="+this.z);
 	}
 	
