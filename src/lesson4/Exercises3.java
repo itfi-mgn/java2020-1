@@ -27,5 +27,4 @@ public class Exercises3 {
 		ml.less();
 		System.err.println("L");
 	}
-
 }
