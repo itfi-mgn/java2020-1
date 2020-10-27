@@ -13,11 +13,13 @@ public class Exercises2 {
 		System.err.println("Suspended");
 		lc.resume();
 		System.err.println("Resumed");
-		lc.stop();
-		System.err.println("Stopped");
 
 		ml.more();
 		System.err.println("More");
+		
+		lc.stop();
+		System.err.println("Stopped");
+
 		ml.less();
 		System.err.println("L");
 		
