@@ -59,6 +59,10 @@ public class StrnigTest {
 		
 		System.err.println("Expression: "+"abcde=".substring(1,3)+12345+' '+true);
 
-		
+		System.err.println("ReplaceAll: "+s.replaceAll("\\d*",""));
+		System.err.println("Split: "+Arrays.toString(s.split("a")));
+
+		int x = Integer.valueOf("12345");
+		String xx = String.valueOf(x);
 	}
 }
