@@ -1,4 +1,4 @@
-package lesson11;
+package lesson11a;
 
 import lesson1.HelloWorld;
 
