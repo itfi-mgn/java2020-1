@@ -1,4 +1,4 @@
-package lesson11a;
+package lesson10;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
