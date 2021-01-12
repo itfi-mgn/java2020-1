@@ -3,9 +3,14 @@ package lesson13;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Properties;
 import java.util.Set;
+import java.util.TreeMap;
 
 class MyClass<T2> extends CollectionTest<Integer,T2> {
 	
@@ -88,6 +93,30 @@ public class CollectionTest<Type extends java.lang.Number,Type2> {
 		Field	f = cl.getField("myVar");
 		
 		System.err.println("Field: "+f.getType());
+		
+		Map<String,Integer>		map = new HashMap<>();
+		TreeMap<String,Integer>	tree;
+//		Map<String,Map<String,Map<String,Integer>>>		map1 = new HashMap<>();
+		
+		System.err.println("Size="+map.size());
+		map.put("ivanov", 21);
+		map.put("petrov", 22);
+		map.put("sidorov", 20);
+		
+		for (Entry<String, Integer> item : map.entrySet()) {
+			System.err.println("Entry: "+item);
+		}
+		Integer	val = map.put("sidorov", 20);
+		System.err.println("Map: "+map);
+		val = map.get("ivanov");
+		System.err.println("Val: "+val);
+		
+		System.err.println("COntains? "+map.containsKey("ivanov"));
+		
+		Properties	prop = new Properties();	// Map<String,String>
+
+//		prop.load(inStream);		// key=value\n
+//		prop.store(inStream,"");
 		
 	}
 }
